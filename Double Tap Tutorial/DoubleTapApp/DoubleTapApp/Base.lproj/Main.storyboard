@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DoubleTapApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dAc-OV-3RG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ns6-pf-E4J">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <gestureRecognizers/>
+                                        <mutableString key="text">Texto que se amplia al hacer double tap. Texto que se amplia al hacer double tap. Texto que se amplia al hacer double tap. Texto que se amplia al hacer double tap. Texto que se amplia al hacer double tap. Texto que se amplia al hacer double tap. Texto que se amplia al hacer double tap. Texto que se amplia al hacer double tap. Texto que se amplia al hacer double tap. Texto que se amplia al hacer double tap. Texto que se amplia al hacer double tap. Texto que se amplia al hacer double tap. Texto que se amplia al hacer double tap. Texto que se amplia al hacer double tap. Texto que se amplia al hacer double tap. Texto que se amplia al hacer double tap. Texto que se amplia al hacer double tap. Texto que se amplia al hacer double tap. Texto que se amplia al hacer double tap. Texto que se amplia al hacer double tap. Texto que se amplia al hacer double tap. </mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ns6-pf-E4J" secondAttribute="trailing" id="0T3-NM-ZSe"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dAc-OV-3RG" secondAttribute="bottom" id="Eoh-G9-J6b"/>
+                            <constraint firstItem="dAc-OV-3RG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IgU-vG-VAT"/>
+                            <constraint firstItem="dAc-OV-3RG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lqC-F0-Gnq"/>
+                            <constraint firstAttribute="trailing" secondItem="dAc-OV-3RG" secondAttribute="trailing" id="qYr-xG-HWy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="2KI-Fw-0gG" appends="YES" id="H4L-hh-9FK"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="texto" destination="ns6-pf-E4J" id="Jfb-gE-YSp"/>
+                        <outlet property="variable" destination="2KI-Fw-0gG" id="A5J-sa-crf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="2KI-Fw-0gG">
+                    <connections>
+                        <action selector="funcion:" destination="BYZ-38-t0r" id="Ycz-2z-rNu"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
